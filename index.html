@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Brust</title>
+    <!-- TAILWIND AND DAISYUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- customised color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- google fonts lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- font style -->
+    <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/31d360c9fc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <!-- nav bar -->
+
+        <!-- banner section Exotic tastes carousel-->
+        <section class="container w-full md:w-10/12 lg:w-4/5 mx-auto">
+            <div class="carousel ">
+                <div id="slide1" class="carousel-item relative w-full bg-gradient-to-r from-slate-600 to-slate-600">
+                  <img src="/images/banner1.png" class="w-full mix-blend-overlay" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <div class="text-center text-white absolute left-12 -top-14 lg:left-[24%] lg:-top-[450%]">
+                        <h3 class="text-3xl font-bold lg:text-7xl lg:font-extrabold lg:pb-6">
+                            Exotic tastes at your <br> doorstep
+                        </h3>
+                        <p class="text-sm md:text-xl lg:text-xl font-medium pb-3 md:pb-7 lg:pb-8">
+                            We supply highly quality organic products
+                        </p>
+                        <button class="btn btn-error">Shop Now</button>
+                      </div>
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full bg-gradient-to-r from-slate-600 to-slate-600">
+                  <img src="/images/banner2.png" class="w-full mix-blend-overlay" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <div class="text-center text-white absolute left-12 -top-14 lg:left-[24%] lg:-top-[450%]">
+                        <h3 class="text-3xl font-bold lg:text-7xl lg:font-extrabold lg:pb-6">
+                            Exotic tastes at your <br> doorstep
+                        </h3>
+                        <p class="text-sm md:text-xl lg:text-xl font-medium pb-3 md:pb-7 lg:pb-8">
+                            We supply highly quality organic products
+                        </p>
+                        <button class="btn btn-error">Shop Now</button>
+                      </div>
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full bg-gradient-to-r from-slate-600 to-slate-600">
+                  <img src="/images/banner3.png" class="w-full mix-blend-overlay" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <div class="text-center text-white absolute left-12 -top-14 lg:left-[24%] lg:-top-[450%]">
+                        <h3 class="text-3xl font-bold lg:text-7xl lg:font-extrabold lg:pb-6">
+                            Exotic tastes at your <br> doorstep
+                        </h3>
+                        <p class="text-sm md:text-xl lg:text-xl font-medium pb-3 md:pb-7 lg:pb-8">
+                            We supply highly quality organic products
+                        </p>
+                        <button class="btn btn-error">Shop Now</button>
+                      </div>
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full bg-gradient-to-r from-slate-600 to-slate-600">
+                  <img src="/images/banner4.png" class="w-full mix-blend-overlay" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <div class="text-center text-white absolute left-12 -top-14 lg:left-[24%] lg:-top-[450%]">
+                        <h3 class="text-3xl font-bold lg:text-7xl lg:font-extrabold lg:pb-6">
+                            Exotic tastes at your <br> doorstep
+                        </h3>
+                        <p class="text-sm md:text-xl lg:text-xl font-medium pb-3 md:pb-7 lg:pb-8">
+                            We supply highly quality organic products
+                        </p>
+                        <button class="btn btn-error">Shop Now</button>
+                      </div>
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+              </div>
+              
+        </section>
+
+        <!-- banner section overlay -->
+
+    </header>
+
+    <main>
+        <!-- deal of the day -->
+
+        <!-- meet the team section -->
+        <section class="relative h-[1600px] md:h-[1000px]  lg:h-[690px] w-full bg-gradient-to-r from-slate-700 to-slate-700">
+            <img class="w-full h-full object-cover absolute mix-blend-overlay	" src="images/team.png" alt="">
+            <div class="text-white text-center">
+                <div class="text-center">
+                    <h3 class="text-xl lg:text-5xl	font-bold pt-28 pb-6 ">
+                        Meet the team section
+                    </h3>
+                    <p class="mx-auto text-sm lg:text-xl pb-12 justify-center text-center w-4/5	">
+                        Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center pb-28 md:px-20 lg:px-60	">
+                    <!-- card-1 -->
+                    <div class="card  ">
+                        <figure><img src="/images/member1.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="text-2xl	font-bold card-title justify-center">
+                                Awlad Hossain
+                            </h2>
+                            <p class="text-base	font-medium	">Fruits Expert</p>
+                            <div class="card-actions justify-center">
+                                <a href=""><i class="fa-brands fa-facebook text-[#F85559]"></i></a>
+                                <a href=""><i class="fa-brands fa-twitter text-[#F85559]"></i></a>
+                                <a href=""><i class="fa-brands fa-linkedin text-[#F85559]"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-2 -->
+                    <div class="card  ">
+                        <figure><img src="/images/member2.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="text-2xl	font-bold card-title justify-center">
+                                Safia Chowdhury
+                            </h2>
+                            <p class="text-base	font-medium	">Fruits Expert</p>
+                            <div class="card-actions justify-center">
+                                <a href=""><i class="fa-brands fa-facebook text-[#F85559]"></i></a>
+                                <a href=""><i class="fa-brands fa-twitter text-[#F85559]"></i></a>
+                                <a href=""><i class="fa-brands fa-linkedin text-[#F85559]"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-3 -->
+                    <div class="card  ">
+                        <figure><img src="/images/member3.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="text-2xl	font-bold card-title justify-center">
+                                Rokib Hossain
+                            </h2>
+                            <p class="text-base	font-medium	">Fruits Expert</p>
+                            <div class="card-actions justify-center">
+                                <a href=""><i class="fa-brands fa-facebook text-[#F85559]"></i></a>
+                                <a href=""><i class="fa-brands fa-twitter text-[#F85559]"></i></a>
+                                <a href=""><i class="fa-brands fa-linkedin text-[#F85559]"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-4 -->
+                    <div class="card lg:pl-5 ">
+                        <figure><img src="/images/member4.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="text-2xl	font-bold card-title justify-center">
+                                Chaity
+                            </h2>
+                            <p class="text-base	font-medium	">Fruits Expert</p>
+                            <div class="card-actions justify-center">
+                                <a href=""><i class="fa-brands fa-facebook text-[#F85559]"></i></a>
+                                <a href=""><i class="fa-brands fa-twitter text-[#F85559]"></i></a>
+                                <a href=""><i class="fa-brands fa-linkedin text-[#F85559]"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+
+
+    </main>
+
+    <footer>
+        <section class="footer footer-center p-10 bg-gray-950	 text-primary-content 	">
+
+            <div class="flex items-center mt-32">
+                <img class="w-14	" src="images/logo.png" alt="">
+                <h4 class="text-4xl	font-bold ">Fruit Burst</h4>
+            </div>
+            <div>
+                <ul class="menu menu-horizontal justify-center ">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                    <li><a>Support</a></li>
+                    <li><a>My Account</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="grid grid-flow-col gap-3 md:gap-5 lg:gap-10 text-4xl mb-32">
+                    <a href=""><i class="fa-brands fa-twitter text-[#00acee]"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook text-[#3b5998]"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube text-red-600"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin text-[#0A66C2]"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram text-pink-600"></i></a>
+                    <a href=""><i class="fa-brands fa-apple text-white"></i></a>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
